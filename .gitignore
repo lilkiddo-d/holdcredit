@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+contracts/out/
+contracts/cache/
+contracts/broadcast/*/31337/
+contracts/deployments/*.dryrun.json
+crytic-export/
+.env
+.env.local
+*.log
+.vercel
+contracts/broadcast/*/4663/dry-run/

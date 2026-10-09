@@ -1,0 +1,14 @@
+{
+  "name": "holdcredit",
+  "private": true,
+  "packageManager": "pnpm@10.18.0",
+  "scripts": {
+    "build:contracts": "cd contracts && forge build",
+    "test:contracts": "cd contracts && forge test",
+    "abi": "node scripts/export-abis.mjs",
+    "app:dev": "pnpm --filter @holdcredit/app dev",
+    "app:build": "pnpm --filter @holdcredit/app build",
+    "keeper": "pnpm --filter @holdcredit/keeper start",
+    "fork:anvil": "anvil --fork-url ${RH_RPC_URL:-https://rpc.mainnet.chain.robinhood.com} --chain-id 31337 --auto-impersonate --block-time 2"
+  }
+}
